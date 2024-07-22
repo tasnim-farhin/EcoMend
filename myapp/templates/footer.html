@@ -1,0 +1,135 @@
+<!-- templates/footer.html -->
+
+<style>
+    .footer {
+        display: flex;
+        background-color: #02834c;
+        color: #fff;
+        padding: 40px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+
+    .footer-column {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .footer-column ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-column ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer-column ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .footer-column h4 {
+        margin-top: 0;
+    }
+
+    .footer-column form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-column form input[type="text"],
+    .footer-column form input[type="email"] {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .footer-column form .form-group {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-column form .form-group input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    .footer-button {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        display: block;
+        width: fit-content;
+        align-self: flex-start;
+    }
+
+    .footer-button:hover {
+        background-color: #02834c;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        color: #fff;
+        background-color: #02834c;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .footer-links{
+        color: black;
+    }
+    .footer-links:hover{
+        color: black;
+    }
+</style>
+
+<div class="footer">
+    <div class="footer-column">
+        <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <ul>
+            <li>Market Place</li>
+            <li>New Listing</li>
+            <li>About Us</li>
+            <li>Categories</li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h4>Subscribe to our newsletter</h4>
+        <p>If you would like to receive our newsletter to keep up to date with news and to receive marketing information regarding our services, please let us know:</p>
+        <p>All fields are required</p>
+        <form>
+            <input type="text" name="first_name" placeholder="First name*">
+            <input type="email" name="email" placeholder="Email address*">
+            <div class="form-group">
+                <input type="checkbox" name="agree" required>
+                <label>* I have read the <a class="footer-links" href="#">Privacy Policy</a> and agree to the storage of my details.</label>
+            </div>
+        </form>
+        <p>This site is protected by reCAPTCHA and the Google <a class="footer-links" href="#">Privacy Policy</a> and <a class="footer-links" href="#">Terms of Service</a> apply.</p>
+    </div>
+</div>
+<p class="footer-bottom">Copyright © 2024 PlasticTraders. All rights reserved.</p>
